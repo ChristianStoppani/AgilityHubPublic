@@ -1,0 +1,368 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-1.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model assessments_expanded {
+  group_id                 Int?
+  user_id                  Int?
+  q1                       String?                 @db.VarChar
+  q2                       String?                 @db.VarChar
+  q3                       String?                 @db.VarChar
+  q4                       String?                 @db.VarChar
+  q5                       String?                 @db.VarChar
+  q6                       String?                 @db.VarChar
+  q7                       String?                 @db.VarChar
+  q8                       String?                 @db.VarChar
+  q9                       String?                 @db.VarChar
+  q10                      String?                 @db.VarChar
+  q11                      String?                 @db.VarChar
+  q12                      String?                 @db.VarChar
+  q13                      String?                 @db.VarChar
+  q14                      String?                 @db.VarChar
+  q15                      String?                 @db.VarChar
+  q16                      String?                 @db.VarChar
+  q17                      String?                 @db.VarChar
+  q18                      String?                 @db.VarChar
+  q19                      String?                 @db.VarChar
+  q20                      String?                 @db.VarChar
+  q21                      String?                 @db.VarChar
+  q22                      String?                 @db.VarChar
+  q23                      String?                 @db.VarChar
+  q24                      String?                 @db.VarChar
+  q25                      String?                 @db.VarChar
+  q26                      String?                 @db.VarChar
+  q27                      String?                 @db.VarChar
+  q28                      String?                 @db.VarChar
+  q29                      String?                 @db.VarChar
+  q30                      String?                 @db.VarChar
+  q31                      String?                 @db.VarChar
+  q32                      String?                 @db.VarChar
+  q33                      String?                 @db.VarChar
+  q34                      String?                 @db.VarChar
+  q35                      String?                 @db.VarChar
+  q36                      String?                 @db.VarChar
+  q37                      String?                 @db.VarChar
+  q38                      String?                 @db.VarChar
+  q39                      String?                 @db.VarChar
+  q40                      String?                 @db.VarChar
+  tcu                      Int?
+  vis                      Int?
+  tco                      Int?
+  pro                      Int?
+  tpe                      Int?
+  lea                      Int?
+  assessment_id            Int                     @id @default(autoincrement())
+  teamassessment_id_open   Int?
+  teamassessment_id_closed Int?
+  opened_on                String?                 @db.VarChar
+  comment                  String?                 @db.VarChar
+  groups                   groups?                 @relation(fields: [group_id], references: [group_id], onDelete: Cascade, onUpdate: NoAction)
+  teamassessments_closed   teamassessments_closed? @relation(fields: [teamassessment_id_closed], references: [teamassessment_id], onDelete: Cascade, onUpdate: NoAction)
+  users                    users?                  @relation(fields: [user_id], references: [user_id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model assessments_expanded_all {
+  assessment_id   Int           @id
+  user_id         Int?
+  q1              String?       @db.VarChar
+  q2              String?       @db.VarChar
+  q3              String?       @db.VarChar
+  q4              String?       @db.VarChar
+  q5              String?       @db.VarChar
+  q6              String?       @db.VarChar
+  q7              String?       @db.VarChar
+  q8              String?       @db.VarChar
+  q9              String?       @db.VarChar
+  q10             String?       @db.VarChar
+  q11             String?       @db.VarChar
+  q12             String?       @db.VarChar
+  q13             String?       @db.VarChar
+  q14             String?       @db.VarChar
+  q15             String?       @db.VarChar
+  q16             String?       @db.VarChar
+  q17             String?       @db.VarChar
+  q18             String?       @db.VarChar
+  q19             String?       @db.VarChar
+  q20             String?       @db.VarChar
+  q21             String?       @db.VarChar
+  q22             String?       @db.VarChar
+  q23             String?       @db.VarChar
+  q24             String?       @db.VarChar
+  q25             String?       @db.VarChar
+  q26             String?       @db.VarChar
+  q27             String?       @db.VarChar
+  q28             String?       @db.VarChar
+  q29             String?       @db.VarChar
+  q30             String?       @db.VarChar
+  q31             String?       @db.VarChar
+  q32             String?       @db.VarChar
+  q33             String?       @db.VarChar
+  q34             String?       @db.VarChar
+  q35             String?       @db.VarChar
+  q36             String?       @db.VarChar
+  q37             String?       @db.VarChar
+  q38             String?       @db.VarChar
+  q39             String?       @db.VarChar
+  q40             String?       @db.VarChar
+  tcu             Int?
+  vis             Int?
+  tco             Int?
+  pro             Int?
+  tpe             Int?
+  lea             Int?
+  profile_version Int
+  comment         String?       @db.VarChar
+  profiles_all    profiles_all? @relation(fields: [user_id, profile_version], references: [id, version], onDelete: NoAction, onUpdate: NoAction, map: "assessment_expanded_all_fkey")
+
+  @@index([user_id, profile_version], map: "fki_assessment_expanded_all_fkey")
+}
+
+model assessments_open {
+  group_id             Int
+  teamassessment_id    Int
+  user_id              Int
+  groups               groups               @relation(fields: [group_id], references: [group_id], onDelete: Cascade, onUpdate: NoAction)
+  teamassessments_open teamassessments_open @relation(fields: [teamassessment_id], references: [teamassessment_id], onDelete: Cascade, onUpdate: NoAction)
+  users                users                @relation(fields: [user_id], references: [user_id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([group_id, teamassessment_id, user_id])
+}
+
+model changes_email {
+  change_id  Int       @id @default(autoincrement())
+  user_id    Int?
+  token      String?   @unique @db.VarChar
+  expires_at DateTime? @default(dbgenerated("(now() + '00:30:00'::interval)")) @db.Timestamp(6)
+  new_email  String?   @db.VarChar
+  users      users?    @relation(fields: [user_id], references: [user_id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model changes_pw {
+  change_id  Int       @id @default(autoincrement())
+  user_id    Int?
+  token      String?   @unique @db.VarChar
+  expires_at DateTime? @default(dbgenerated("(now() + '00:30:00'::interval)")) @db.Timestamp(6)
+  users      users?    @relation(fields: [user_id], references: [user_id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model feedback {
+  user_id              Int?
+  asm_comment          String?   @db.VarChar
+  asm_helpful          String?   @db.VarChar
+  asm_learn            String?   @db.VarChar
+  asm_recommend        String?   @db.VarChar
+  web_comment          String?   @db.VarChar
+  web_design           String?   @db.VarChar
+  web_device           String?   @db.VarChar
+  web_structure        String?   @db.VarChar
+  web_use              String?   @db.VarChar
+  email_clarifications Boolean?
+  given_at             DateTime? @default(now()) @db.Timestamp(6)
+  feedback_id          Int       @id @default(autoincrement())
+}
+
+model groups {
+  group_id                 Int                        @id @default(autoincrement())
+  name                     String?                    @db.VarChar
+  leaders_scores           Boolean?                   @default(true)
+  invite_token             String?                    @unique @db.VarChar
+  assessments_expanded     assessments_expanded[]
+  assessments_open         assessments_open[]
+  invitations_unregistered invitations_unregistered[]
+  invitations_user         invitations_user[]
+  members                  members[]
+  teamassessments_closed   teamassessments_closed[]
+  teamassessments_open     teamassessments_open[]
+}
+
+model groups_all {
+  group_id           Int                  @id @default(autoincrement())
+  name               String?              @db.VarChar
+  leaders_scores     Boolean?             @default(true)
+  teamassessment_all teamassessment_all[]
+}
+
+model invitations_unregistered {
+  group_id   Int
+  email      String @db.VarChar
+  invited_by Int?
+  groups     groups @relation(fields: [group_id], references: [group_id], onDelete: Cascade, onUpdate: NoAction)
+  users      users? @relation(fields: [invited_by], references: [user_id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([group_id, email])
+}
+
+model invitations_user {
+  group_id                                 Int
+  user_id                                  Int
+  invited_by                               Int?
+  groups                                   groups @relation(fields: [group_id], references: [group_id], onDelete: Cascade, onUpdate: NoAction)
+  users_invitations_user_invited_byTousers users? @relation("invitations_user_invited_byTousers", fields: [invited_by], references: [user_id], onDelete: Cascade, onUpdate: NoAction)
+  users_invitations_user_user_idTousers    users  @relation("invitations_user_user_idTousers", fields: [user_id], references: [user_id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([group_id, user_id])
+}
+
+model members {
+  group_id Int
+  user_id  Int
+  isadmin  Boolean?
+  groups   groups   @relation(fields: [group_id], references: [group_id], onDelete: Cascade, onUpdate: NoAction)
+  users    users    @relation(fields: [user_id], references: [user_id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([group_id, user_id])
+}
+
+model profiles {
+  user_id    Int     @id
+  dob        String  @db.VarChar
+  sex        String  @db.VarChar
+  country    String  @db.VarChar
+  education  String  @db.VarChar
+  field      String  @db.VarChar
+  division   String? @db.VarChar
+  position   String  @db.VarChar
+  experience Int
+  version    Int     @default(1)
+  users      users   @relation(fields: [user_id], references: [user_id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model profiles_all {
+  id                       Int
+  dob                      String                     @db.VarChar
+  sex                      String                     @db.VarChar
+  country                  String                     @db.VarChar
+  education                String                     @db.VarChar
+  field                    String                     @db.VarChar
+  division                 String?                    @db.VarChar
+  position                 String                     @db.VarChar
+  experience               Int
+  version                  Int                        @default(1)
+  assessments_expanded_all assessments_expanded_all[]
+
+  @@id([id, version])
+}
+
+model profiles_unconfirmed {
+  user_id           Int               @id
+  dob               String            @db.VarChar
+  sex               String            @db.VarChar
+  country           String            @db.VarChar
+  education         String            @db.VarChar
+  field             String            @db.VarChar
+  division          String?           @db.VarChar
+  position          String            @db.VarChar
+  experience        Int
+  users_unconfirmed users_unconfirmed @relation(fields: [user_id], references: [user_id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model teamassessment_all {
+  teamassessment_id Int         @id
+  group_id          Int?
+  tcu               Int?
+  vis               Int?
+  tco               Int?
+  pro               Int?
+  tpe               Int?
+  lea               Int?
+  groups_all        groups_all? @relation(fields: [group_id], references: [group_id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model teamassessments_closed {
+  teamassessment_id    Int                    @id
+  group_id             Int?
+  tcu                  Int?
+  vis                  Int?
+  tco                  Int?
+  pro                  Int?
+  tpe                  Int?
+  lea                  Int?
+  opened_on            String?                @db.VarChar
+  groups               groups?                @relation(fields: [group_id], references: [group_id], onDelete: Cascade, onUpdate: NoAction)
+  assessments_expanded assessments_expanded[]
+}
+
+model teamassessments_open {
+  teamassessment_id Int                @id @default(autoincrement())
+  group_id          Int?
+  completed_by      Int?
+  tot               Int?
+  opened_on         String?            @db.VarChar
+  groups            groups?            @relation(fields: [group_id], references: [group_id], onDelete: Cascade, onUpdate: NoAction)
+  assessments_open  assessments_open[]
+}
+
+model users {
+  user_id                                             Int                        @id
+  email                                               String?                    @unique @db.VarChar
+  password                                            String?                    @db.VarChar
+  first_name                                          String?                    @db.VarChar
+  last_name                                           String?                    @db.VarChar
+  profile_img                                         String?                    @db.VarChar
+  created_at                                          DateTime?                  @db.Timestamp(6)
+  ask_feedback                                        Boolean?                   @default(true)
+  linkedin_id                                         String?                    @unique(map: "linkedin_id_unique") @db.VarChar
+  assessments_expanded                                assessments_expanded[]
+  assessments_open                                    assessments_open[]
+  changes_email                                       changes_email[]
+  changes_pw                                          changes_pw[]
+  invitations_unregistered                            invitations_unregistered[]
+  invitations_user_invitations_user_invited_byTousers invitations_user[]         @relation("invitations_user_invited_byTousers")
+  invitations_user_invitations_user_user_idTousers    invitations_user[]         @relation("invitations_user_user_idTousers")
+  members                                             members[]
+  profiles                                            profiles?
+}
+
+model users_deleted {
+  user_id     Int       @id
+  email       String?   @db.VarChar
+  password    String?   @db.VarChar
+  first_name  String?   @db.VarChar
+  last_name   String?   @db.VarChar
+  profile_img String?   @db.VarChar
+  created_at  DateTime? @db.Timestamp(6)
+}
+
+model users_unconfirmed {
+  user_id              Int                   @id @default(autoincrement())
+  email                String?               @unique @db.VarChar
+  password             String?               @db.VarChar
+  first_name           String?               @db.VarChar
+  last_name            String?               @db.VarChar
+  created_at           DateTime?             @default(now()) @db.Timestamp(6)
+  expires_at           DateTime?             @default(dbgenerated("(now() + '1 day'::interval day)")) @db.Timestamp(6)
+  token                String?               @unique @db.VarChar
+  profiles_unconfirmed profiles_unconfirmed?
+}
+
+model dummy_profiles {
+  user_id    Int
+  age        Int?
+  sex        String? @db.VarChar
+  country    String? @db.VarChar
+  education  String? @db.VarChar
+  field      String? @db.VarChar
+  experience Int?
+  version    Int
+
+  @@id([user_id, version], map: "dummy_profiles_pk")
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model dummy_scores {
+  assessment_id   Int  @id
+  user_id         Int?
+  tcu             Int?
+  vis             Int?
+  tco             Int?
+  pro             Int?
+  tpe             Int?
+  lea             Int?
+  profile_version Int?
+}

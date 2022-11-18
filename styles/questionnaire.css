@@ -1,0 +1,269 @@
+#quest-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+}
+
+#quest-page-cont {
+    height: 100%;
+    width: 100%;
+    max-width: 1500px;
+}
+
+#quest-page-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    background-color: #f3f3f3;
+    z-index: -1;
+}
+
+#quest-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    height: 10%;
+}
+
+#quest-title {
+    position: relative;
+    margin-left: 5%;
+    font-family: Rubikmed;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+
+    color: #283747;
+}
+
+.info-btn {
+    width: 35px;
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.info-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#info-frame {
+    padding: 0;
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
+}
+
+#info-content {
+    position: relative;
+    background-color: #e5e5e5;
+    padding: 15px;
+    color: #283747;
+    max-width: 80%;
+
+    overflow: auto;
+}
+
+#info-bar {
+    display: flex;
+    align-items: center;
+}
+
+#info-close-btn {
+    position: relative;
+
+    width: 25px;
+    padding: 0;
+    margin-left: auto;
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#hist-close-btn { 
+    width: 35px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 5%;
+    background-color: inherit;
+}
+
+#hist-close-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#quest-content {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: calc( 90% - 15% - 5*16px);
+    min-height: 330px;
+}
+
+#categories {
+    position: relative;
+    margin-right: 16px;
+}
+
+#categories-s > .cat > .btn:not(.active) {
+    display: none;
+}
+
+.cat {
+    margin: 8px;
+}
+
+.cat:hover {
+    opacity: 0.5;
+}
+
+.cat-name {
+    position: relative;
+
+    font-family: Rubik;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    z-index: 3;
+}
+
+.cat-no {
+    position: relative;
+    margin-right: 0;
+    margin-left: auto;
+
+    font-family: Rubikmed;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    z-index: 3;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 16px;
+
+    border-radius: 50px;
+
+    color: #283747;
+    
+    background-color: #ffffff;
+
+    z-index: 2;
+}
+
+.active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #283747;
+
+    color: #f3f3f3;
+
+    z-index: 0;
+}
+
+#questions-frame {
+    position: relative;
+    height: 100%;
+
+}
+
+#questions-bg {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    background-color: #f3f3f3;
+}
+
+.questions {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.current {
+    display: flex;
+    flex-direction: column;
+}
+
+#q-comm-box {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    max-height: 500px;
+    padding: 16px;
+    resize: none
+}
+
+#evaluate-btn {
+    position:relative;
+    display: flex;
+
+    font-family: Rubikmed;
+    font-size: 18px;
+    padding: 9px;
+    align-items: center;
+    text-align: center;
+
+    color: #f3f3f3;
+
+    border: none;
+    cursor: pointer;
+
+    background-color: #283747;
+}
+
+#quest-btn-row {
+    margin-top: 16px;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+#quest-btn-col {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+
+#evaluate-btn:hover {
+    opacity: 0.8;
+}
+
+#evaluate-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#evaluate-btn:disabled:hover {
+    opacity: 0.5;
+}
+

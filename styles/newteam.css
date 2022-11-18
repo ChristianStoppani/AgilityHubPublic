@@ -1,0 +1,238 @@
+#page-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+  
+    background-color: #e5e5e5;
+}
+
+.new-page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    background-color: #e5e5e5;
+  }
+
+#newteam-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom:2%;
+}
+
+#new-team-title {
+    position: relative;
+    margin-left: 5%;
+    font-family: Rubikmed;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    color: #283747;
+}
+
+#new-close-btn {
+    width: 35px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+#new-team-container {
+    position: relative;
+    margin: auto;
+    margin-top: 25px;
+    width: min(max(40%, 300px), 450px);
+}
+
+.new-team-entry {
+    width: max(100%, 250px);
+
+    font-family: Rubikmed;
+    font-size: 16px;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    /* border: 1px solid #283747; */
+
+    color: #283747
+}
+
+#team-name {
+    position:relative;
+    padding: 8px;
+}
+
+#add-member {
+    position: relative;
+    font-family: Rubikmed;
+    height: 32px;
+
+    margin-top: 20px;
+}
+
+#add-form {
+    position: relative;
+}
+
+#add-email {
+    font-family: Rubik;
+    height: 32px;
+}
+
+#add-btn {
+    position: absolute;
+    left: calc(100% + 16px);
+    top: 0%;
+}
+
+#add-btn-s {
+    position: relative;
+    margin-top: 8px;
+    width: 100%
+}
+
+.new-team-btn {
+    height: 32px;
+    
+
+    border: none;
+    font-family: Rubikmed;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    background-color: #283747;
+
+    cursor: pointer;
+
+}
+
+.new-team-btn-s {
+    height: 32px;
+    
+
+    border: none;
+    font-family: Rubikmed;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    background-color: #283747;
+
+    cursor: pointer;
+
+}
+
+.new-team-btn:hover {
+    opacity: 0.8;
+}
+
+#new-leader {
+    font-family: Rubikmed;
+    height: 32px;
+
+    margin-top: 20px;
+}
+
+#new-leader-text {
+    background-color: #ffffff;
+    height: 32px;
+    margin-top: 5px;
+}
+
+#members {
+    font-family: Rubikmed;
+    height: 32px;
+    margin-top: 20px;
+}
+
+#members-lst { 
+    max-height: 160px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.member-email {
+    background-color: #ffffff;
+    margin-top: 8px;
+    height: 32px;
+}
+
+.remove-member-btn {
+    font-family: Rubikmed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+
+    height: 32px;
+
+    color: #283747;
+
+    border: none;
+
+    background-color: inherit;
+
+    cursor: pointer;
+}
+
+
+.remove-member-btn:hover {
+    opacity: 0.8;
+}
+
+#dup-btn-container {
+    position: relative;
+    margin-top: 20px;
+}
+
+#duplicate-member {
+    position: absolute;
+    height: 32px;
+    width: 75%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    color: rgba(255, 0, 20, 0.8);
+    background-color: rgba( 255, 0, 20, 0.15);
+    border: 1px solid rgba(255, 0, 20, 0.8);
+}
+
+#create-team {
+    margin-left: auto;
+    margin-right: 0%;
+}
+
+#create-team-s {
+    width: 100%;
+    margin-left: auto;
+    margin-right: 0%;
+}
+
+#create-team:hover {
+    opacity: 0.8;
+}
+
+#new-pg-end {
+    position: relative;
+    height: 32px;
+}
+

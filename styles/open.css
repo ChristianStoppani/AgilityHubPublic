@@ -1,0 +1,120 @@
+#open-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  
+    z-index: 1;
+  }
+
+#open-page-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #e5e5e5;
+    z-index: -1;
+}
+
+#open-page-cont {
+    max-width: 1500px;
+    width: 100%;
+}
+
+#assessments-title {
+    position: relative;
+    margin-left: 5%;
+    font-family: Rubikmed;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    color: #283747;
+}
+
+#open-bar {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#assessments-home-button {
+    width: 25px;
+    margin-right: 5%;
+    margin-left: auto;
+    padding: 0;
+}
+
+#no-team-assessment-bar {
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#no-team-assessment {
+    font-size: 16px;
+    
+}
+
+#assessments-list {
+    position: relative;
+    margin-top: 4%;
+    left: 10%;
+    width: 80%;
+}
+
+#no-open-assessments {
+    position: relative;
+    margin-top: 25px;
+
+    font-size: 16px;
+    font-family: 'Rubik';
+    color: #283747;
+}
+
+#assessments-link {
+    color: purple;
+}
+
+#assessment-container {
+    position: relative;
+    background-color: #ffffff;
+    padding: 2vw;
+    margin-bottom: 2vw;
+}
+
+#assessment-text-l {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#start-assessment-l {
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#assessment-text-m {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2vw;
+}
+
+#start-assessment-m {
+    position: relative;
+    margin-top: 1.2vw;
+    padding: 0.5vw;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+}

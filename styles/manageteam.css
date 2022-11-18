@@ -1,0 +1,168 @@
+.manage-page {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #e5e5e5;
+}
+
+#manage-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#manage-title {
+    position: relative;
+    margin-left: 5%;
+    font-family: Rubikmed;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    color: #283747;
+}
+
+#manage-close-btn {
+    width: 35px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+#manage-container {
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    width: min(max(30%, 250px), 450px);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.manage-teamname-btn {
+    margin-top: 16px;
+    padding: 8px;
+    width: 100%;
+}
+
+#save-team-name:disabled {
+    opacity: 0.5;
+}
+
+#cancel-team-name {
+    color:#283747;
+    background-color: #ffffff;
+    border: 1px solid #283747;
+}
+
+.entry-manage::placeholder {
+    color: #283747;
+    opacity: 1
+}
+
+.manage-entry-list {  
+    max-height: 208px;
+    overflow: auto;
+}
+
+.manage-entry {
+    background-color: #ffffff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 8px;
+    margin-right: 1%;
+}
+
+#manage-leaders {
+    display: flexbox;
+    order: 0;
+    margin-top: 16px;
+}
+
+.manage-team-btn {
+    font-family: Rubikmed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #283747;
+
+    border: none;
+
+    background-color: inherit;
+
+    cursor: pointer;
+}
+
+.manage-team-btn:hover {
+    opacity: 0.5;
+}
+
+#manage-members {
+    display: flexbox;
+    order: 1;
+    margin-top: 16px;
+    overflow: auto;
+}
+
+#manage-add-member {
+    display: flexbox;
+    order: 2;
+    margin-top: 16px;
+}
+
+#manage-add-email {
+    margin-top: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#manage-duplicate-alert {
+    display: none;
+    margin-top: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    justify-content: center;
+
+    color: rgba(255, 0, 20, 0.8);
+    
+    border: 1px solid red;
+
+    background-color: rgba( 255, 0, 20, 0.15);
+}
+
+#manage-pending {
+    display: flexbox;
+    order: 3;
+    margin-top: 16px;
+}
+
+#manage-include-scores {
+    display: flex;
+    order: 4;
+    margin-top: 16px;
+    align-items: center;
+}
+
+#include-scores-lab {
+    font-family: Rubik;
+    font-size: 16px;
+    color: #283747;
+}
+
+#delete-team {
+    display: flexbox;
+    order: 5;
+    margin-bottom: 5%;
+}
+
+#delete-team-btn {
+    background-color: red
+}

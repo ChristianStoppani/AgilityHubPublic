@@ -1,0 +1,41 @@
+#articles {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(180deg, #FFFFFF 0, #E0E0E0 100%);
+    z-index: 2;
+}
+
+#articles-title {
+    display: flexbox;
+
+    padding-left: 5%;
+
+    padding-top: 5vh;
+}
+
+
+#articles-container {
+    width: 90%;
+    margin: 5%;
+    color: #283747;
+}
+
+.sect-title {
+    font-family: Rubikmed;
+    font-size: 25px;
+}
+
+.sect-title-s {
+    text-align: center ;
+    font-family: Rubikmed;
+    font-size: 25px;
+}
+
+#articles-footer {
+    width: 100%}

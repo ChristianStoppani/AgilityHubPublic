@@ -1,0 +1,289 @@
+#hist-page {
+    position: absolute;
+    width: 100%;
+
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#history-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#history-title {
+    position: relative;
+    margin-left: 5%;
+    font-family: Rubikmed;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    color: #283747;
+}
+
+#hist-home-btn {
+    width: 35px;
+    padding:0;
+    margin-right: 5%;
+    margin-left: auto;
+}
+
+#hist-btns-bar-ml {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#history-teams {
+    background-color: #283747;
+    color: #ffffff;
+    padding: 8px;
+
+    font-family: 'Rubik';
+    font-size: 16px !important;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+#history-teams > option {
+    font-size: 16px !important;
+    max-width: 100%
+}
+
+#open-assessments-btn {
+    padding: 8px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+#hist-btns-bar-s {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#history-teams-s {
+    background-color: #283747;
+    color: #ffffff;
+    padding: 8px;
+
+    font-family: 'Rubik';
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    margin-bottom: 16px;
+}
+
+#open-assessments-btn-s {
+    padding: 8px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+#history-assessments {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    padding-bottom: 5%;
+    
+    text-align: center;
+
+    overflow: auto ;
+}
+
+#history-chart-container {
+    width: 100%;
+    margin-bottom: 16px
+}
+
+#evolution-chart {
+    width: 100%
+}
+
+#csv-download-btn {
+    padding: 8px;
+    margin: auto;
+}
+
+#unpublished-frame {
+    padding: 0;
+    z-index: 20
+
+}
+
+#unpublished-content {
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    min-width: 300px;
+    width: max(min(80%, 700px), 500px);
+    background-color: #e5e5e5;
+    padding-bottom: 5%;
+
+    overflow: auto;
+}
+
+#unpublished-bar {
+    display: flex;
+    align-items: center;
+}
+
+#unpublished-title {
+    position: relative;
+    margin-top: 4%;
+    margin-left: 4%;
+    font-size: 20px;
+}
+
+#unpublished-close-btn {
+    position: relative;
+
+    width: 25px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 4%;
+    margin-top: 4%;
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#unpublished-list {
+    position: relative;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.asm-content {
+    position: relative;
+    background-color: #ffffff;
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+.asm-content-ml {
+    display: flex;
+    flex-direction: column;
+}
+
+#toggle-status {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    
+
+    border: none;
+    background: #ffffff;
+
+    cursor: pointer;
+}
+
+#toggle-status:hover {
+    opacity: 0.5
+}
+
+.status-open {
+    color: grey
+}
+
+#completion-status-ml {
+    margin-top: 16px;
+    display: block
+}
+
+.asm-content-s {
+    display: flex;
+    flex-direction: column;
+}
+
+.unpublished-text-s {
+    display: flex;
+    flex-direction: column;
+}
+
+#completion-status-s {   
+    margin: 8px;
+    display: block
+}
+
+.publish-btn {
+    position: relative;
+    padding: 8px;
+    margin-left: 8px
+}
+
+.publish-btn-s {
+    margin: 8px;
+    width: calc((100% - 16px));
+    padding: 8px
+}
+
+.asm-container {
+    display: inline-block;
+    margin: 13px;
+    padding: 8px;
+
+    background-color: #ffffff;
+}
+
+.asm-bar {
+    display: flex;
+    align-items: center;
+}
+
+.delete-asm-btn {
+    position: relative;
+
+    width: 16px;
+    margin-left: auto;
+    border: none;
+    background: none;
+
+    cursor: pointer;
+}
+
+.delete-asm-btn:hover {
+    opacity: 0.8;
+}
+
+.asm-date {
+    position: relative;
+    font-family: Rubikmed;
+}
+
+.scores-table {
+    margin: auto;
+    position: relative;
+    font-family: Rubik;
+    font-size: 13px;
+    color: #283747;
+    line-height: 16px;
+}
+
+.asm-scores-chart {
+    position: relative;
+
+    overflow-x: visible;
+    
+    margin-bottom: 8px;
+}

@@ -1,0 +1,406 @@
+#account-page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #e5e5e5;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#account-bar {
+    align-items: center;
+    margin-top: 5%;
+    max-width: 1500px;
+    min-height:35px
+}
+
+#account-title {
+    position: relative;
+    margin-left: 5%;
+    font-family: Rubikmed;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    color: #283747;
+}
+
+#acc-home-btn{
+    width: 35px;
+    height: 35px;
+    padding:0;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+#propic-container {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+#propic-frame {
+    position: relative;
+    width: min(max(15vw, 150px), 200px);
+    height: min(max(15vw, 150px), 200px);
+
+    margin-top: 15px;
+
+    display:flex;
+    flex-direction: column;
+
+    border-radius: 50%;
+    background: white;
+
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Rubikmed';
+    font-size: 64px;
+    color: grey
+}
+
+#propic {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#propic-img {
+    display: flexbox;
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#pic-form {
+    position: relative;
+    top: -16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#propic-label-bg {
+    position: relative;
+    height: 32px;
+    width: 32px;;
+    border-radius: 50%;
+
+    background: #fff;
+}
+
+#propic-btn {
+    position: relative;
+    top: -32px;
+    
+    height: 32px;
+    width: 32px;
+    padding: 4px;
+    background: #fff;
+    border: 1px solid #283747;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+#propic-btn:hover {
+    opacity: 0.5;
+}
+
+#pic-opt {
+    position: relative;
+    top: -20px;
+
+    flex-direction: column;
+
+    display: none;
+}
+
+.propic-opt{
+    position: relative;
+    height: 32px !important;
+    width: 80px;
+
+
+    background: white;
+    border: 1px solid #283747;
+    border-top: none;
+    color:#283747;
+    cursor:pointer;
+    font-family: 'Rubikmed';
+    font-size: 16px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.propic-opt:hover {
+    opacity: 0.7
+}
+
+#propic-label {
+    color:#283747;
+    cursor:pointer;
+    font-family: 'Rubikmed';
+    border-top: 1px solid #283747;
+}
+
+#img-change-conf {
+    color: #283747;
+    font-family: 'Rubik';
+    width: min(90%, calc(max(15%, 130px) + 10px + min(65%,300px)));
+    margin: auto;
+    padding: 16px;
+    
+    border: 1px solid green;
+    background-color: #DBF0E2;
+}
+
+#update-login {
+    
+  border: none;
+
+  font-family: Rubikmed;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  background-color: #283747;
+
+  cursor: pointer;
+}
+
+#update-login:hover {
+    opacity: 0.5
+}
+
+#account-data-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#account-data {
+    position: relative;
+    display: flexbox;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    width: min(100%, calc(max(15%, 130px) + 10px + min(65%,300px)));
+    margin:auto;
+}
+
+.acc-lab {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 40%;
+
+    font-family: 'Rubik';
+    font-size: 16px;
+    color: #283747;
+}
+
+.acc-data {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 10px;
+
+    font-family: 'Rubik';
+    font-size: 16px;
+    color: #283747;
+}
+
+#acc-name {
+    display: flex;
+    min-height: 32px;
+}
+
+#acc-dob {
+    display: flex;
+    min-height: 32px
+}
+
+#acc-sex {
+    display: flex;
+    min-height: 32px
+}
+
+#acc-country {
+    margin-top: 16px;
+    display: flex;
+    min-height: 32px
+}
+
+#acc-edu {
+    display: flex;
+    min-height: 32px
+}
+
+#acc-field {
+    display: flex;
+    min-height: 32px;
+}
+
+#acc-div {
+    display: flex;
+    min-height: 32px
+}
+
+#acc-position {
+    display: flex;
+    min-height: 32px
+}
+
+#acc-work-data-change {
+    margin-top: 16px;
+    display: none;
+}
+
+#acc-work-data {
+    margin-bottom: -16px
+}
+
+#acc-work-data-change > ::placeholder {
+    color: #283747;
+    opacity: 1;
+}
+
+#acc-update-btns {
+    margin-top: 16px;
+    display: flex;
+    height: 32px
+}
+
+.acc-label-field {
+    display: flex;
+    height: 32px;
+    align-items: center;
+    width: 40%;
+
+    margin-top: 16px;
+
+    font-family: 'Rubik';
+    font-size: 16px;
+    color: #283747;
+
+}
+
+.acc-entry-field {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding-right: 16px;
+    margin-left: 0;
+    max-width: 90vw;
+
+    font-family: 'Rubik';
+    font-size: 16px;
+    color: #283747;
+
+}
+
+.acc-btn {
+    margin-top: 16px;
+    height: 32px;
+    width: 100%;
+}
+
+#acc-email {
+    display: flex;
+    margin-top: 48px;
+    height: 32px;
+}
+
+#await-email {
+    width: 100%;
+    justify-content: center;
+    color: grey;
+}
+
+#acc-change-email {
+    display: none;
+    align-items: center;
+    margin-top: 16px;
+    height: 80px;
+    width: min(100%, calc(max(15%, 130px) + 10px + min(65%,300px)));
+}
+
+#acc-new-email {
+    height: 32px;
+
+    font-family: 'Rubik';
+    font-size: 16px;
+    color: #283747
+}
+
+.acc-email-btn {
+    height: 32px;
+    margin-left: 8px
+}
+
+#acc-change-pw {
+    margin-top: 48px;
+}
+
+#acc-change-pw-confirm {
+    display: none;
+    align-items: center;
+    margin-top: 16px;
+    height: 80px;
+    border: 1px solid green;
+    background-color: #DBF0E2;
+
+    font-family: 'Rubik';
+    font-size: 13px;
+    color: #283747;
+    padding: 16px;
+}
+
+#acc-del-btn {
+    margin-top: 48px;
+    background-color: red;
+}
+
+#acc-change-email-confirm {
+    display: none;
+    align-items: center;
+    margin-top: 16px;
+    height: 80px;
+    border: 1px solid green;
+    background-color: #DBF0E2;
+
+    font-family: 'Rubik';
+    font-size: 13px;
+    color: #283747;
+    padding: 16px;
+}
+
+#acc-confirm-close {
+    margin-right: 0;
+    margin-left: auto;
+
+    color: green;
+
+    border: none;
+    background:transparent;
+
+    cursor: pointer
+}
+
+#acc-confirm-close:hover {
+    opacity: 0.5
+}
+

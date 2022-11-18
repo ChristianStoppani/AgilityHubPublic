@@ -1,0 +1,122 @@
+#feedback-page {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #FFFFFF 12.5%, #E0E0E0 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#feedback-content {
+    position: relative;
+    min-height: 100vh;
+    width: 50%;
+    min-width: 275px;
+    max-width: 1500px;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #283747;
+}
+
+#feedback-text {
+  font-family: Rubik;
+  font-size: 16px;
+  color: #283747
+}
+
+#feedback-form {
+    margin-bottom: 5vh;
+    width: 100%;
+}
+
+.feedback-title {
+    font-family: Rubikmed;
+    font-size: 25px
+}
+
+#feedback-assessment {
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.feedback-table {
+    position: relative;
+    table-layout: fixed;
+    text-align: center;
+
+    margin-bottom: 32px;
+}
+
+.feedback-table input {
+    border: 0px;
+    width: 100%;
+    height: 25px;
+
+    color: #283747
+}
+
+.feedback-table td {
+    width: 10vw;
+    min-width: 55px;
+}
+
+#asm-comment {
+    width: 100%;
+    font-family: Rubik;
+    color: #283747;
+    font-size: 16px;
+    padding: 8px;
+    height: calc(8*16px);
+    resize: none;
+    margin-bottom: 48px;
+
+}
+
+#feedback-website {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#web-comment {
+    width: 100%;
+    font-family: Rubik;
+    padding: 8px;
+    color: #283747;
+    font-size: 16px;
+    height: calc(8*16px);
+    resize: none;
+}
+
+#fedback-cb-container {
+    font-family: Rubik;
+    font-size: 16px;
+    color: #283747;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 32px;
+}
+
+#feedback-cb {
+    transform: scale(1.2);
+}
+
+#feedback-submit {
+    padding: 8px
+}
+
+#feedback-successful {
+    font-family: Rubik;
+    font-size: 16px;
+    color: #283747;
+    padding: 32px;
+    text-align: center;
+    
+    border: 1px solid green;
+    background-color: #DBF0E2;
+}

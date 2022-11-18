@@ -1,0 +1,139 @@
+#app-page {
+    width: 100%;
+    left: 0%;
+    min-height: 100%;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, #e0e0e0 100%);
+    z-index: 2;
+
+    
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#app-page-content {
+    width: 100%;
+    max-width: 1500px;
+    min-height: 100%;
+}
+
+#app-title {
+    display: flexbox;
+
+    padding-left: max(5vw, 50px);
+
+    padding-top: 5vh;
+}
+
+#app-title-small {
+    display: flexbox;
+    font-size: 30px;
+    padding-top: 15px;
+    justify-content:center;
+}
+
+#home-first-container {
+    display: flexbox;
+
+    padding-left: max(5vw, 50px);
+    padding-right: max(5vw, 50px);
+}
+
+#home-first-container-l {
+    padding-left: max(5%, 50px);
+    padding-right: max(5%, 50px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#ta-text {
+    display: block;
+    padding-top: min(5%, 50px)
+}
+
+#ta-image {
+    padding-top: min(5%, 50px);
+    max-width: 600px;
+}
+
+
+#home-second-container {
+    display: flex;
+    justify-content: center;
+    padding-top: min(5%, 50px);
+    padding-bottom: min(5%, 50px)
+}
+
+.hp-btn {
+    font-family: 'Rubikmed';
+    font-size: 40px;
+    padding: min(max(1.2vw, 15px), 30px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    border: none;
+
+    background: #283747;
+
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+.hp-btn-s {
+    font-family: 'Rubikmed';
+    font-size: 25px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    border: none;
+
+    background: #283747;
+
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+.hp-btn:hover {
+    opacity: 0.5;
+}
+
+#home-third-container {
+    padding-left: max(5%, 50px);
+    padding-right: max(5%, 50px);
+}
+
+#home-third-container-l {
+    padding-left: max(5%, 50px);
+    padding-right: max(5%, 50px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#ta-text2 {
+    display: block;
+    padding-bottom: min(5%, 50px)
+}
+
+#ta-image2 {
+    max-width: 600px;
+    padding-bottom: min(5%, 50px)
+}
+
+#dashboard-container {
+    margin-left: max(5%, 50px);
+    margin-right: max(5%, 50px)
+}
