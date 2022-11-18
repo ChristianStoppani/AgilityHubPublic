@@ -1,0 +1,245 @@
+#signupII-page {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f3f3f3;
+}
+
+#signupII-frame {
+    position: relative;
+    width: min(max(40%, 290px), 600px);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #f3f3f3;
+}
+
+#data-disclaimer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    margin-bottom: 15px;
+    color: grey;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#data-disclaimer:hover {
+    opacity: 0.5
+}
+
+#data-disclaimer-frame {
+    position: relative;
+    margin-left: 5%;
+    margin-bottom: 15px;
+    width: 90%;
+    background: #ffffff;
+    border: 1px solid #283747;
+}
+
+#data-disclaimer-text {
+    font-family: 'Rubik';
+    font-size: 13px;
+    text-align: justify;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+}
+
+#disclaimer-close-btn {
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 0;
+
+    font-size: 18px;
+    font-family: 'Rubikmed';
+
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#disclaimer-close-btn:hover {
+    opacity: 0.5
+}
+
+#signup-form-container {
+    position: relative;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.signupII-entry {
+    width: 100%;
+    position: relative;
+
+    border: none;
+    margin-bottom: 15px;
+
+    font-family: Rubik;
+    padding: 8px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    border: 1px solid #283747 !important;
+
+    color: #283747
+}
+
+.signupII-label {
+    position:relative;
+
+    font-family: Rubik;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #283747
+}
+
+#passwordI {
+    margin-bottom: 0;
+}
+
+#pw-requirements {
+    position: relative;
+
+    font-family: Rubik;
+
+    margin-top: 8px;    
+    padding-left: 8px;
+    padding-bottom: 16px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+
+    color: #283747
+}
+
+.req-fail {
+    color: red !important;
+}
+
+.req-ok {
+    color: green !important;
+}
+
+.signup-pw-req {
+    position: relative;
+}
+
+#signupII-pw-eye {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#passwordII{
+    margin-bottom: 0;
+}
+
+#passwordII:disabled {
+    background-color: #ffffff;
+    opacity: 0.5;
+    cursor: no-drop;
+}
+
+
+#password-status {
+    position: relative;
+
+    display: flex;
+    justify-items: center;
+}
+
+.show-msg {
+    display: block !important;
+}
+
+#password-no-match {
+    position: relative;
+
+    margin-top: 8px;    
+    padding-left: 8px;
+
+    color: red;
+    font-size: 13px;
+
+    display: none;
+}
+
+#password-match {
+    position: relative;
+    
+    margin-top: 8px;    
+    padding-left: 8px;
+    
+    color: green;
+    font-size: 13px;
+
+    display: none;
+}
+
+#privacy-info-container {
+    position: relative;
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    font-family: Rubik;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    color: #283747;
+}
+
+#privacy-btn {
+    -webkit-appearance: checkbox;
+
+    margin-right: 15px;;
+    
+    background-color: #ffffff;
+
+    cursor: pointer;
+}
+
+#signupII-btn {
+    position: relative;
+
+    font-family: Rubikmed;
+    padding: 8px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #F3F3F3;
+
+    background-color: #283747;
+
+    cursor: pointer;
+
+    border: none;
+}
+
+#signupII-btn:hover {
+    opacity: 0.5;
+}
+
+#signupII-btn:disabled {
+    opacity: 0.2;
+    cursor: inherit;
+    cursor: no-drop;
+}

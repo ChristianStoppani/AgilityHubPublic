@@ -1,0 +1,80 @@
+.question-container {
+    position: relative;
+    left: 1%;
+    width: 98%;
+
+    border: 1px black;
+    margin-bottom: 48px;
+}
+
+.question-text {
+    position: relative;
+    left: 2%;
+    width: 96%;
+
+    font-family: Rubik;
+    font-size: 16px;
+    display: flex;
+    text-align: justify;
+
+    color: #283747;
+}
+
+.options-container {
+    position: relative;
+    left: 0%;
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+}
+
+.option {
+    position: relative;
+    top: 0%;
+    padding: 16px;
+    width: 20%;
+
+    border: none;
+    outline: 1px solid #283747;
+    cursor: pointer;
+
+    font-family: Rubik;
+    font-size: 16px;
+    align-items: center;
+    text-align:center;
+
+    vertical-align:top;
+}
+
+.option-m {
+    position: relative;
+    top: 0%;
+    padding: 16px;
+
+    border: none;
+    outline: 1px solid #283747;
+    cursor: pointer;
+
+    font-family: Rubik;
+    font-size: 16px;
+    color: #283747;
+    align-items: center;
+    text-align:center;
+
+    vertical-align:top;
+}
+
+.option:hover {
+    opacity: 0.5;
+}
+
+.option:not(.selected) {
+    color: #283747;
+    background-color: #f3f3f3;
+}
+
+.selected {
+    color: #f3f3f3;
+    background-color: #283747;
+}

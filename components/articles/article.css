@@ -1,0 +1,39 @@
+#article-cont {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding: 16px;
+    background: white;
+    border: 2px solid #283747
+}
+
+#article-header {
+    font-family: Rubikmed;
+    font-size: 18px
+}
+
+#toggle-summary-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 13px;
+    margin-top:16px;
+    margin-left:15%;
+    margin-right: 15%;
+    border:2px solid #283747;
+    background: #ffffff;
+
+    cursor: pointer;
+}
+
+#toggle-summary-btn:hover {
+    opacity: 0.5
+}
+
+#article-summary {
+    margin-left: 5%;
+}

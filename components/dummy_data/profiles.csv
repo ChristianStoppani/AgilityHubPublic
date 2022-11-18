@@ -1,0 +1,51 @@
+"user_id","age","sex","country","education","field","experience","version"
+1,19,"Other","Switzerland","PhD","Engineering",14,1
+2,52,"Male","Germany","PhD","Information & Communication Technology",13,1
+3,36,"Male","France","Bachelor","Science & Technology",15,1
+4,29,"Male","Switzerland","Master","Information & Communication Technology",30,1
+5,46,"Female","Austria","Master","Science & Technology",15,1
+6,26,"Male","Switzerland","Apprenticeship","Science & Technology",21,1
+7,42,"Male","Switzerland","Bachelor","Science & Technology",0,1
+8,19,"Female","Switzerland","Apprenticeship","Engineering",1,1
+9,50,"Female","Germany","Apprenticeship","Engineering",31,1
+10,26,"Male","Germany","Master","Banking & Financial Services",30,1
+11,58,"Male","Austria","Bachelor","Science & Technology",38,1
+12,50,"Male","France","Apprenticeship","Consulting & Strategy",16,1
+13,47,"Female","France","Bachelor","Information & Communication Technology",31,1
+14,53,"Male","Austria","Apprenticeship","Consulting & Strategy",16,1
+15,52,"Other","Switzerland","PhD","Engineering",16,1
+16,19,"Other","Switzerland","Bachelor","Education & Training",15,1
+17,58,"Male","Switzerland","Bachelor","Science & Technology",8,1
+18,43,"Male","Switzerland","Apprenticeship","Information & Communication Technology",10,1
+19,47,"Female","Switzerland","Master","Consulting & Strategy",13,1
+20,47,"Female","France","High School","Science & Technology",0,1
+21,49,"Female","Switzerland","Master","Banking & Financial Services",6,1
+22,39,"Other","France","Apprenticeship","Engineering",14,1
+23,43,"Female","Switzerland","Master","Consulting & Strategy",20,1
+24,43,"Other","Switzerland","PhD","Science & Technology",8,1
+25,58,"Male","Switzerland","Master","Education & Training",9,1
+26,26,"Female","Switzerland","Master","Consulting & Strategy",13,1
+27,53,"Female","Germany","Master","Education & Training",8,1
+28,48,"Female","France","PhD","Information & Communication Technology",27,1
+29,37,"Female","Switzerland","Apprenticeship","Banking & Financial Services",13,1
+30,43,"Male","Italy","Master","Education & Training",16,1
+31,23,"Male","Germany","Master","Science & Technology",14,1
+32,58,"Male","France","PhD","Information & Communication Technology",6,1
+33,51,"Female","Germany","High School","Engineering",14,1
+34,53,"Female","Austria","Master","Science & Technology",15,1
+35,46,"Male","Germany","PhD","Banking & Financial Services",10,1
+36,58,"Male","Switzerland","PhD","Information & Communication Technology",30,1
+37,48,"Female","Switzerland","Apprenticeship","Science & Technology",1,1
+38,19,"Female","Switzerland","Master","Engineering",10,1
+39,43,"Male","Luxembourg","Apprenticeship","Consulting & Strategy",5,1
+40,19,"Female","Switzerland","High School","Information & Communication Technology",21,1
+41,51,"Female","Switzerland","Master","Education & Training",6,1
+42,52,"Female","Austria","Master","Education & Training",15,1
+43,49,"Male","Germany","Master","Banking & Financial Services",15,1
+44,43,"Female","Austria","Master","Engineering",8,1
+45,43,"Female","Switzerland","Master","Science & Technology",11,1
+46,19,"Male","Switzerland","Master","Science & Technology",20,1
+47,31,"Male","Germany","High School","Science & Technology",33,1
+48,45,"Male","Germany","PhD","Consulting & Strategy",15,1
+49,19,"Female","Italy","Master","Information & Communication Technology",25,1
+50,51,"Male","Switzerland","PhD","Information & Communication Technology",30,1

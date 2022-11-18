@@ -1,0 +1,113 @@
+.team-container {
+    position: relative;
+    background-color: #ffffff;
+    width: 98%;
+
+    margin-bottom: 5%;
+}
+
+#assessment-opened {
+    display: none;
+    justify-content: center;
+    position: relative;
+    padding: 5px;
+    margin: 8px;
+    border: 1px solid green;    
+    background-color: green;
+    color: white
+}
+
+#ass-open-close {
+    position: absolute;
+    right: 16px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor:pointer
+}
+
+#ass-open-close:hover {
+    opacity: 0.5
+}
+
+#team-header {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+#team-name-m {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+}
+
+#team-btns-m {
+    display: flex;
+    justify-content: center;
+}
+
+#team-header-s {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+}
+
+#history-s {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-name {
+    font-family: Rubikmed !important;
+    color: #283747;
+    display: flex;
+    align-items: center;
+
+}
+
+#toggle-members-btn {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding-bottom: 16px;
+
+    border: none;
+    background: #ffffff;
+
+    cursor: pointer;
+}
+
+#toggle-members-btn:hover {
+    opacity: 0.5
+}
+
+#all-members-container {
+    position: relative;
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+.leaders-container { 
+    position: relative;
+    display: inline-block;
+
+    margin-right: 5%;
+
+}
+
+.leader-container {
+    position: relative;
+    display: inline-block;
+}
+
+.member-container {
+    position: relative;
+    display: inline-block;
+}

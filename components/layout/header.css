@@ -1,0 +1,207 @@
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 7}
+
+#main-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 7;
+}
+
+#header-title {    
+    font-family: Rubikmed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: min(max(1.2vw, 16px), 25px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-right: 5%;
+
+    color: #283747
+}
+
+.link{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: min(max(1.2vw, 16px), 25px);
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    color: #283747;
+}
+
+.link:hover {
+    opacity: 0.5;
+}
+
+#menu-btn {
+    width: 70px;
+    cursor: pointer
+}
+
+#menu-btn:hover {
+    opacity: 0.5
+}
+
+
+#user-options-button {
+    aspect-ratio: 1 / 1;
+    margin-right: max(1.2vw, 15px);
+
+    margin-top: max(1vw, 12px);
+    margin-bottom: max(1vw, 12px);
+
+    font-family: Rubikmed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #F3F3F3;
+
+    border-radius: 50%;
+
+    background-color: #283747;
+
+    border: none;
+    cursor: pointer;
+}
+
+#user-options-button:hover {
+    opacity: 0.8
+}
+
+#user-image {
+    position: absolute;
+    aspect-ratio: 1 / 1;
+    display: flexbox;
+    height: calc(100% - max(1vw, 12px));
+
+    margin-top: max(1vw, 12px);
+    margin-bottom: max(1vw, 12px);
+    
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#log-in-button {
+    font-family: Rubikmed;
+    font-size: min(max(1.2vw, 16px), 25px);
+    
+    padding: max(0.5vw, 6px);
+    margin-top: max(0.5vw, 6px);
+    margin-bottom: max(0.5vw, 6px);
+    margin-right: max(0.5vw, 6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #F3F3F3;
+    
+    background: #283747;
+
+    border: none;
+    cursor: pointer;
+}
+
+#small-header {
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 7;
+}
+
+#small-header > .link { 
+    display: flex;
+    align-items: center;
+}
+
+#user-menu-mod {
+    position: fixed;
+    top: 0%;
+    height: 100%;
+    z-index:20
+}
+
+#user-menu {
+    width: 50%;
+    max-width: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+
+    background-color: white;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+
+    color: #283747;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    z-index: 2;
+}
+
+#user-menu-small {
+    top: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#user-menu-small > .w3-bar-item {
+    color: #283747;
+
+    font-family: 'Rubik';
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    border: none;
+
+    background-color: #ffffff;
+}
+
+.user-menu-btn {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+
+    color: #283747;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    cursor: pointer;
+    border:none;
+
+    background-color: #ffffff;
+}
+
+.user-menu-btn:hover {
+    opacity: 0.5;
+}

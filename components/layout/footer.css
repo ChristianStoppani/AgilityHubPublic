@@ -1,0 +1,77 @@
+a:hover {
+    opacity: 0.8;
+}
+
+
+#footer-title {
+    text-decoration: none;
+    opacity: 1;
+    color: #F3F3F3;
+    font-size: 25px;
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+
+    background-color: #283747;
+    color: #ffffff;
+    font-family: 'Rubik';
+    font-size: 15px;
+    z-index: 6;
+}
+
+#footer-first {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px
+}
+
+.footer-titles {
+    font-family: Rubik;
+    color: #F3F3F3;
+    font-size: 20px;
+}
+
+.footer-login {
+    background-color: #283747;
+
+    cursor: pointer ;
+
+    color: #ffffff;
+
+    border: 1px solid #ffffff !important
+}
+
+.footer-login:hover {
+    opacity: 0.8;
+}
+
+#footer-signup {
+    margin-top: 10px
+}
+
+#footer-first-small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-first-small > .footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-share {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#footer-second {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

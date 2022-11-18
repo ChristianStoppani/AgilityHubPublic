@@ -1,0 +1,53 @@
+.member-frame {
+    position: relative;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.member-image {
+    width: 66px;
+    height: 66px;
+
+    font-family: Rubikmed;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #F3F3F3;
+
+    border-radius: 50%;
+
+    background-color: #929292;
+
+    border: none;
+}
+
+#member-image {
+    position: absolute;
+    aspect-ratio: 1 / 1;
+    display: flexbox;
+    height: 66px;
+    
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.member-name {
+
+    font-size: 16px;
+    margin-top: 8px;
+    word-break: break-word;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    line-height: 18px;
+}

@@ -1,0 +1,264 @@
+#login-page {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f3f3f3;
+}
+
+#login-frame {
+    position: relative;
+    width: min(max(40%, 290px), 600px);
+    margin-top: 4%;
+    margin-bottom: 4%;
+    background-color: #f3f3f3;
+}
+
+#login-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#login-title {
+    position: relative;
+    padding: 0;
+    font-family: Rubikmed;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    color: #283747;
+}
+
+#login-close-btn {
+    width: 40px;
+    padding: 0%;
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#login-close-btn:hover {
+    opacity: 0.8;
+}
+
+#linkedin-login-link {
+    margin-top: 15px;
+}
+
+#linkedin-login:hover {
+    opacity: 0.5 !important;
+}
+
+#linkedin-login {
+    position: relative;
+
+    border: 1px solid #283747;
+
+    left: 10%;
+    width: 80%;
+
+    padding: 8px;
+    white-space: nowrap;
+
+    font-family: Rubik;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    color: #283747;
+}
+
+#linkedin-login-logo {
+    margin-left: 15px;
+    position: relative;
+    width: 100px;
+  }
+
+#login-separation {
+    font-family: Rubik;
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 15px;
+}
+
+
+#sep-line {
+    position: relative;
+    width: 80%;
+    border: 0.75px solid #283747;
+    border-radius: 0.75px;
+
+    background-color: #283747;
+}
+
+#sep-text {
+    position: absolute;
+    background-color: #f3f3f3;
+    padding-left: 8px;
+    padding-right: 8px;
+    z-index: 2
+}
+
+
+#email-login {
+    position: relative;
+    margin-left: 5%;
+    width: 90%;
+}
+
+#email-login-title {
+    font-family: Rubik;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    color: #283747;
+}
+
+.login-entry {
+    width: 100%;
+    position: relative;
+
+    border: none;
+
+    font-family: Rubik;
+    padding: 8px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    border: 1px solid #283747 !important;
+
+    color: #283747
+}
+
+#login-email-entry {  
+    margin-bottom: 15px;
+}
+
+#login-pw-eye {
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    margin-bottom: 15px
+}
+
+.pw-eye {
+    position: absolute;
+    height: 100%;
+    top:0;
+    right: 5%;
+    width: 30px;
+    
+    border:none;
+    background-color: rgba(0, 0, 0, 0);
+
+    cursor: pointer;
+}
+
+.pw-eye:hover {
+    opacity: 0.5;
+}
+
+.pw-eye-img {
+    display: flex;
+    justify-content: center;
+}
+
+#login-error-msg {
+    position: relative;
+    display: none;
+    margin-bottom: max(1.2vw, 15px);
+
+    font-family: Rubik;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    padding: 8px;
+
+    color: rgba(255, 0, 20, 0.8);
+
+    background-color: rgba( 255, 0, 20, 0.15);
+
+    border: 1px solid rgba(255, 0, 20, 0.8);
+    
+
+}
+
+#login-btn-opt {
+    display: flex;
+}
+
+#email-login-btn {
+    position: relative;
+
+    font-family: Rubikmed;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 8px;
+    white-space: nowrap;
+
+    color: #F3F3F3;
+
+    background-color: #283747;
+
+    cursor: pointer;
+
+    border: none;
+}
+
+#email-login-btn:hover {
+    opacity: 0.5;
+}
+
+#email-login-btn:disabled {
+    opacity: 0.2;
+    cursor: inherit;
+    cursor: no-drop;
+}
+
+#email-login-options {
+    position: relative;
+    margin-right: 0%;
+    margin-left: auto;
+
+    font-family: Rubik;
+    font-size: 13px;
+
+    color: #283747;
+}
+
+.email-login-btn {
+    font: inherit;
+    
+    color: purple;
+
+    cursor: pointer;
+
+    border:none;
+    background-color: transparent;
+    text-decoration: underline;
+    padding: 0;
+}
+
+.email-login-btn:hover {
+    opacity: 0.5;
+}

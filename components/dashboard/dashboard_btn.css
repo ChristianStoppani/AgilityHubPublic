@@ -1,0 +1,59 @@
+.db-btn-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+    height: 20vh;
+    max-height: 200px;
+}
+
+.db-icon-txt {
+    display: flex;
+    align-items: center;
+}
+
+.db-btn-cont-s {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.db-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;;
+    color: #283747;
+    height: 80%;
+    width: 80%;
+    margin: 2vh;
+
+    cursor: pointer;
+
+    border: 3px solid #283747;
+    font-size: 25px
+}
+
+.db-btn-s {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;;
+    color: #283747;
+    height: 80%;
+    width: 80%;
+    margin: 2vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    cursor: pointer;
+
+    border: 3px solid #283747;
+    font-size: 16px
+}
+
+.db-btn:hover {
+    opacity: 0.5
+}

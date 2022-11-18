@@ -1,0 +1,126 @@
+#signupI-page {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f3f3f3;
+}
+
+#signupI-frame {
+    position: relative;
+    width: min(max(40%, 290px), 600px);
+    margin-top: 4%;
+    margin-bottom: 4%;
+    background-color: #f3f3f3;
+}
+
+#signup-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#signup-title {
+    position: relative;
+    padding: 0;
+    font-family: Rubikmed;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    color: #283747;
+}
+
+#signup-close-btn {
+    width: 40px;
+    padding: 0%;
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#signup-close-btn:hover {
+    opacity: 0.8;
+}
+
+#email-signup {
+    position: relative;
+    margin-left: 5%;
+    width: 90%;
+}
+
+#email-signup-title {
+    font-family: Rubik;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    color: #283747;
+}
+
+.signup-entry {
+    width: 100%;
+    position: relative;
+
+    border: none;
+    margin-bottom: 15px;
+
+    font-family: Rubik;
+    padding: 8px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    border: 1px solid #283747 !important;
+
+    color: #283747
+}
+
+#signup-btn-opt {
+    display: flex;
+}
+
+#email-signup-btn {
+    position: relative;
+
+    font-family: Rubikmed;
+    font-size: 25px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #F3F3F3;
+
+    background-color: #283747;
+
+    cursor: pointer;
+
+    border: none;
+}
+
+#email-signup-btn:hover {
+    opacity: 0.5;
+}
+
+#email-signup-options {
+    position: relative;
+    margin-right: 0%;
+    margin-left: auto;
+
+    font-family: Rubik;
+    font-size: 13px;
+
+    color: #283747;
+}
+
+#email-signup-login:hover {
+    opacity: 0.5;
+}
