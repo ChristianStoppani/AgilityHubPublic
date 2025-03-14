@@ -8,7 +8,7 @@ The WebApp follows the typical structure of a Next.js project:
 
 **Pages** contains the main scripts for the pages visualised by the user as well as the APIs
 
-**Styles** contains the CCS files associated to those pages
+**Styles** contains the CSS files associated to those pages
 
 **Components** contains chunks of code which are reused across the website, along with the respective css
 
