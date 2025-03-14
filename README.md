@@ -2,7 +2,7 @@
 
 Welcome!
 
-This public directory contains the code of my bachelor thesis. To see the finished product, head over to the [Agility Hub](https://agilityhub.ch). 
+This public directory contains the code of my bachelor thesis.
 
 The WebApp follows the typical structure of a Next.js project:
 
